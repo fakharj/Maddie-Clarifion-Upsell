@@ -1,0 +1,805 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.topBar {
+  width: 100%;
+  height: 50px;
+  padding: 0px 8rem;
+  background: #252f3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.topBar .arrowBox {
+  display: none;
+}
+
+.topBar .topBarContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.topBarBox {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.topBarBox p {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.wrapperSpacing {
+  padding: 0px 8rem;
+}
+
+.navContainer {
+  width: 100%;
+  display: flex;
+  padding: 30px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navContainer .leftContainer img {
+  width: 192px;
+  height: 36px;
+}
+
+.navContainer .rightContainer {
+  display: flex;
+  gap: 32px;
+}
+
+.navContainer .rightContainer img {
+  width: 82px;
+  height: 32px;
+}
+
+.stepperContainer {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.stepperContainer h1 {
+  color: #000;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.stepperContainer p {
+  color: #4d5254;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.stepperProgressContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0px;
+}
+
+.stepperProgressContainer .stepBox {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.stepperProgressContainer .stepBox p {
+  color: #000;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  text-transform: capitalize;
+}
+
+.stepperProgressContainer .stepBox .progressBox {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #85bf55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.stepperProgressContainer .stepBox .blueBox {
+  background: #2c7ef8;
+  color: #fff;
+}
+
+.stepperProgressContainer .stepBox .transparentBox {
+  background: transparent;
+  color: #2c7ef8;
+  border: 1px solid #2c7ef8;
+}
+
+.stepperProgressContainer .stepBox .progressBox svg {
+  width: 16px;
+  height: 16px;
+}
+
+.stepperProgressContainer .stepBox .boldText {
+  font-weight: 700;
+}
+
+.heroSectionContainer {
+  width: 100%;
+  height: fit-content;
+  margin: 40px 0px;
+  padding: 40px;
+  border-radius: 10px;
+  background: #fafafa;
+  display: flex;
+  align-items: start;
+  gap: 40px;
+}
+
+.heroSectionContainer .leftContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.heroSectionContainer .leftContainer img {
+  max-width: 100%;
+  height: fit-content;
+}
+
+.heroSectionContainer .leftContainer .ratingBox {
+  width: 100%;
+  height: fit-content;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.heroSectionContainer .ratingBox .profileBox {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.heroSectionContainer .ratingBox .profileBox img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+}
+
+.heroSectionContainer .ratingBox .ratingInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.heroSectionContainer .ratingBox .ratingInfoContainer img {
+  width: 78.109px;
+  height: 11.946px;
+  flex-shrink: 0;
+}
+
+.heroSectionContainer .ratingInfoContainer .userInfoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heroSectionContainer .ratingInfoContainer .userInfoContainer h1 {
+  color: #333;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.heroSectionContainer .ratingInfoContainer .userInfoContainer img {
+  width: 16px;
+  height: 16px;
+}
+
+.heroSectionContainer .ratingInfoContainer .userInfoContainer p {
+  color: #5bb59a;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.heroSectionContainer .ratingBox .commentContainer {
+  align-self: stretch;
+  color: #4d5254;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.heroSectionContainer .rightContainer {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.heroSectionContainer .rightContainer .titleText {
+  color: #000;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-transform: capitalize;
+  align-self: stretch;
+}
+
+.heroSectionContainer .rightContainer .titleText span {
+  color: #2c7ef8;
+}
+
+.heroSectionContainer .rightContainer .productBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.heroSectionContainer .rightContainer .productWrapper {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+}
+
+.heroSectionContainer .rightContainer .productBox .productDetailsBlock {
+  font-size: 16px;
+}
+
+.heroSectionContainer .rightContainer .productBox .productDetailsHidden {
+  display: none;
+  color: #4d5254;
+  font-size: 15px;
+}
+
+.heroSectionContainer .rightContainer .productBox img {
+  width: 134px;
+  height: 134px;
+}
+
+.heroSectionContainer .rightContainer .productBox .productInfoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heroSectionContainer .rightContainer .productBox .namePriceContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.heroSectionContainer .rightContainer .productBox .namePriceContainer h1 {
+  color: #000;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.heroSectionContainer .rightContainer .namePriceContainer .priceBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heroSectionContainer .rightContainer .namePriceContainer .priceBox span {
+  color: #969696;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: line-through;
+  text-transform: capitalize;
+}
+
+.heroSectionContainer .rightContainer .namePriceContainer .priceBox p {
+  color: #2c7ef8 !important;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.heroSectionContainer .rightContainer .productBox .productInfoContainer img {
+  width: fit-content;
+  height: 18px;
+}
+
+.heroSectionContainer .rightContainer .productBox .productInfoContainer label {
+  display: flex;
+  align-items: center;
+}
+
+.heroSectionContainer .rightContainer .productInfoContainer label span {
+  font-size: 13px;
+}
+
+.heroSectionContainer .rightContainer .productBox .productInfoContainer > p {
+  color: #4d5254;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.heroSectionContainer .rightContainer .cartInfoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heroSectionContainer .rightContainer .cartInfoContainer .cartInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.heroSectionContainer .rightContainer .cartInfoContainer .cartInfo p {
+  color: #4d5254;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.heroSectionContainer .rightContainer .cartInfoContainer .cartInfo span {
+  color: #4d5254;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.heroSectionContainer .rightContainer .discountTextContainer {
+  width: 100%;
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #edf3fd;
+}
+
+.heroSectionContainer .rightContainer .discountTextContainer img {
+  width: 32px;
+  height: 32px;
+}
+
+.heroSectionContainer .rightContainer .discountTextContainer p {
+  color: #000;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.heroSectionContainer .rightContainer .discountTextContainer span {
+  color: #2c7ef8;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.heroSectionContainer .rightContainer .discountButton {
+  display: flex;
+  padding: 16px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 50px;
+  background: rgba(89, 174, 67, 1);
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.heroSectionContainer .rightContainer .discountButton:hover {
+  background: rgba(89, 174, 67, 0.9);
+}
+
+.heroSectionContainer .rightContainer .discountButton:active {
+  transform: scale(0.95);
+}
+
+.heroSectionContainer .rightContainer .discountButton p {
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.heroSectionContainer .rightContainer .discountButton svg {
+  width: 16px;
+}
+
+.heroSectionContainer .rightContainer .paymentSecurityContainer {
+  width: 100%;
+  display: flex;
+  padding: 8px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid #cfcfcf;
+}
+
+.heroSectionContainer .rightContainer .encryptionTextContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.heroSectionContainer .rightContainer .paymentSecurityContainer p {
+  color: #4d5254;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.heroSectionContainer .rightContainer .paymentSecurityContainer .straightLine {
+  width: 1px;
+  height: 16px;
+  color: #cfcfcf;
+}
+
+.heroSectionContainer .rightContainer .paymentSecurityContainer .straightRow {
+  width: 100%;
+  height: 1px;
+  color: #cfcfcf;
+  display: none;
+}
+
+.heroSectionContainer .rightContainer .paymentLockContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heroSectionContainer .rightContainer .paymentLockContainer svg {
+  width: 12px;
+  height: 12px;
+}
+
+.heroSectionContainer .rightContainer .paymentLockContainer p {
+  font-size: 12px;
+}
+
+.heroSectionContainer .rightContainer .cardImagesContainer {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.heroSectionContainer .rightContainer .noThanksTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroSectionContainer .rightContainer .noThanksTextContainer p {
+  color: #f82c2c;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.heroSectionContainer .rightContainer .guaranteeContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.heroSectionContainer .rightContainer .guaranteeContainer img {
+  width: 88px;
+  height: 88px;
+}
+
+.heroSectionContainer .rightContainer .guaranteeContainer p {
+  color: #4d5254;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.heroSectionContainer .rightContainer .guaranteeContainer span {
+  color: #4d5254;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.footerContainer {
+  width: 100%;
+  background: #252f3d;
+  padding: 24px 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerContainer .leftContainer {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footerContainer .leftContainer p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.footerContainer .leftContainer .emailText {
+  text-transform: none;
+}
+
+.footerContainer .rightContainer {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footerContainer .rightContainer p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: capitalize;
+}
+
+/* Media Queries Screen 1300px */
+
+@media only screen and (max-width: 1300px) {
+  .heroSectionContainer .rightContainer .paymentSecurityContainer {
+    flex-direction: column;
+  }
+
+  .heroSectionContainer .rightContainer .paymentSecurityContainer .straightRow {
+    display: block;
+  }
+
+  .heroSectionContainer .rightContainer .straightLineNone {
+    display: none;
+  }
+}
+
+/* Media Queries Screen 1200px */
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .topBar {
+    padding: 0px 3.5rem;
+  }
+
+  .wrapperSpacing {
+    padding: 0px 3.5rem;
+  }
+
+  .footerContainer {
+    padding: 24px 3.5rem;
+  }
+}
+
+/* Media Queries Screen 992px */
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+
+  .topBar {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .topBar .topBarContainer {
+    justify-content: center;
+  }
+
+  .topBar .topBarBox {
+    display: none;
+  }
+
+  .topBar .topBarBox:nth-child(1) {
+    width: fit-content;
+    display: flex;
+  }
+
+  .topBar .topBarBox:nth-child(1) p {
+    white-space: nowrap;
+  }
+
+  .topBar .topBarContainer {
+    width: fit-content;
+  }
+
+  .topBar .arrowBox {
+    display: flex;
+  }
+
+  .stepperProgressContainer .stepBox {
+    gap: 16px;
+  }
+
+  .stepperProgressContainer .stepBox p {
+    text-align: center;
+  }
+
+  .stepperProgressContainer .stepBox span {
+    display: none;
+  }
+
+  .heroSectionContainer {
+    flex-direction: column;
+  }
+
+  .heroSectionContainer .leftContainer {
+    width: 100%;
+  }
+
+  .heroSectionContainer .leftContainer .ratingBox {
+    display: none;
+  }
+
+  .heroSectionContainer .rightContainer {
+    width: 100%;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Media Queries Screen 768px */
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+
+  .stepperProgressContainer .stepBox {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Media Queries Screen 576px */
+
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+
+  .navContainer .leftContainer img {
+    width: 120px;
+    height: 25px;
+  }
+
+  .navContainer .rightContainer img {
+    width: 60px;
+    height: 22px;
+  }
+
+  .stepperProgressContainer .stepBox .progressBox {
+    width: 30px;
+    height: 30px;
+  }
+
+  .stepperProgressContainer .stepBox p {
+    font-size: 1.3rem;
+  }
+
+  .heroSectionContainer {
+    padding: 0px;
+    background: transparent;
+  }
+
+  .heroSectionContainer .rightContainer .productBox .productDetailsBlock {
+    display: none;
+  }
+
+  .heroSectionContainer .rightContainer .productBox .productDetailsHidden {
+    display: block;
+  }
+}
+
+/* Media Queries Screen 400px */
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 45%;
+  }
+}
